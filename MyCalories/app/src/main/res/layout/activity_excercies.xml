@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/indir"
+    tools:context=".activity.ExcerciesActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addExercies"
+        android:layout_width="146dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="40dp"
+        android:onClick="addExcercies"
+        android:text="@string/add_excercies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameRcy"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nameRcy"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/excercies_name"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#B6F0E8E8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <EditText
+        android:id="@+id/setTekrar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="set/tekrar"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="#B6F0E8E8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

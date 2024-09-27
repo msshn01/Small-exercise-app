@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Gym</string>
+    <string name="go_to_main">Go to Main</string>
+    <string name="add_meal">Add Meal</string>
+    <string name="stock_meal">Stock Meal</string>
+    <string name="excercies">Excercies</string>
+    <string name="add_excercies">Add Excercies</string>
+    <string name="excercies_name">Excercies Name</string>
+    <string name="set_tekrar">Set/Tekrar</string>
+    <string name="name">Name:</string>
+</resources>
